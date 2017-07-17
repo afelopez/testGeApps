@@ -2,6 +2,8 @@ class Vehicle < ApplicationRecord
   validates :plate, uniqueness: true, presence: true, format: {with: /^(ABC|DFG)/, multiline: true}
   after_initialize :set_categorie
 
+  has_many :paths
+
   enum categorie: [:categoria1, :categoria2]
 
   def set_categorie
