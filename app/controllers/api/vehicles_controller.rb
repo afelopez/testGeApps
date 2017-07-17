@@ -7,6 +7,7 @@ class Api::VehiclesController < Api::ApiController
   def create
     vehicle = Vehicle.new(vehicle_params)
     vehicle.save!
+    vehicle.plate[0..2].include?('ABC') ? vehicle.update!(categorie: 'categoria1') : vehicle.update!(categorie: 'categoria2')
     render json: { message: 'Vehículo creado en ' + vehicle.categorie}, status: 200
     rescue Exception => e
     render json: { message: e.message , status: false }, status: 400
