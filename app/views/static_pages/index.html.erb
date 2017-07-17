@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Placa de Vehiculo</td>
+    <td>Nombre de Pasajero</td>
+  </tr>
+  <% @paths.each do |path| %>
+    <tr>
+    <td><%= path.id %></td>
+    <td><%= path.vehicle.plate %></td>
+    <td><%= path.passenger.name %></td>
+    </tr>
+  <%end%>
+</table>
