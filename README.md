@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# testGeApps
+:O
+>>>>>>> 971be87367e1d7960fe04de3b0a0ca71fa4795e5
