@@ -8,7 +8,7 @@ Passenger.delete_all
   n += 1
 end
 
-10.times {
+100.times {
   vehicle = Vehicle.find(Random.rand(1..Vehicle.all.length))
   passenger = Passenger.find(Random.rand(1..Passenger.all.length))
   Path.create!(vehicle: vehicle, passenger: passenger)
