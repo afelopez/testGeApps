@@ -10,8 +10,8 @@ describe Vehicle do
     expect(vehicle).to be_valid
   end
   it "invalid plate" do
-    vehicle = Vehicle.create!(plate: 'AWD32', color: 'Red', year: 2015)
-    expect(vehicle.errors[:plate]).to be_valid
+    vehicle = Vehicle.new(plate: 'AWD32', color: 'Red', year: 2015)
+    expect(vehicle).to be_invalid
   end
   it "valid categoria1" do
     vehicle = Vehicle.create!(plate: 'ABC1ywyatd', color: 'Red', year: 2015)

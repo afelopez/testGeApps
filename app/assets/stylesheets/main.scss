@@ -1,0 +1,28 @@
+table {
+  width: 700px;
+  margin: 0 auto 0 auto;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  height: 25px;
+}
+tr.thead > th{
+  background-color: #a6a8ad;
+  height: 50px;
+  text-align: center;
+}
+tr.tbody:nth-child(even) {background-color: #c6c9ce;}
+tr.tbody:nth-child(odd) {background-color: #bac6d8;}
+tr.tbody:nth-child(even):hover, tr.tbody:nth-child(odd):hover {background-color:#d2d5db;}
+
+.paginate{
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.user{
+  position: fixed;
+  margin-left: 90%;
+}

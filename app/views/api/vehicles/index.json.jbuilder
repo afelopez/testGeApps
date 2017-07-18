@@ -1,1 +1,1 @@
-json.array! @vehicles, :plate, :color , :year, :categorie
+json.array! @vehicles, :id, :plate, :color , :year, :categorie

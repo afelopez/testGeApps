@@ -1,0 +1,16 @@
+.user
+  = link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'
+= form_tag(static_pages_path, method: :get) do
+  = text_field_tag :search, params[:search]
+  = submit_tag 'Buscar'
+%table
+  %tr.thead
+    %th ID
+    %th Placa de Vehiculo
+    %th Nombre de Pasajero
+  - @paths.each do |path|
+    %tr.tbody
+      %td= path.id
+      %td= path.vehicle.plate
+      %td= path.passenger.name
+.paginate=will_paginate @paths
